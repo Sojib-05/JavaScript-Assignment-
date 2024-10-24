@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>To Do List</title>
+</head>
+<body onload="time()" >
+    <div class="todo-container">
+        <div class="date-hour">
+            <p id="date">Date </p>
+            <p id="hour"> Hour</p>
+        </div>
+
+        <header>
+            <h1>ToDo List!</h1>
+        </header>
+
+        <!--add task-->
+        <form action="" id="todo-form">
+            <p>Add Your Task Here</p>
+            <div class="form-control">
+                <input type="text" id="todo-input" placeholder="Add your new ToDo....">
+                <button type="submit">
+                    <i class='bx bx-plus'></i>
+                </button>
+            </div>
+        </form>
+
+
+<!-- Edit the Task-->        
+        <form action="" id="edit-form" class="hide">
+            <p>dit Your Task </p>
+            <div class="form-control">
+                <input type="text" id="edit-input" placeholder="Add your new ToDo....">
+                <button type="submit">
+                    <i class='bx bx-check-double'></i>
+                </button>
+            </div>
+        </form>
+
+        <button type="button" id="cancel-edit-btn">Cancel</button>
+
+
+        <!-- task list-->
+        <div class="todo-list" id="todo-list">
+            <div class="todo">
+                <h3>Some Default Task</h3>
+                <button id="finish-todo">
+                    <i class='bx bx-check'></i>
+                </button>
+
+                <button id="edit-todo">
+                    <i class='bx bxs-pencil'></i>
+                </button>
+
+                <button id="remove-todo">
+                    <i class='bx bx-x'></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
